@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ViewController.textFieldShouldReturn(UITextField) -&gt; Bool:ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "textField.resignFirstResponder()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.(viewDidLoad(ViewController) -&gt; () -&gt; ()).(closure #1).(closure #1).(closure #1):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "dialogs?[1].name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

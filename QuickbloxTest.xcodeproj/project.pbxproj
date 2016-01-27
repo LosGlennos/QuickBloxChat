@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B64551B1C50D7CC00CD6057 /* Quickblox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B64551A1C50D7CC00CD6057 /* Quickblox.framework */; };
+		5BC99DF61C58A5D600965211 /* QBUPersonalUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC99DF51C58A5D600965211 /* QBUPersonalUser.swift */; };
+		5BE296501C50B98500E15542 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2964F1C50B98500E15542 /* AppDelegate.swift */; };
+		5BE296521C50B98500E15542 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE296511C50B98500E15542 /* ViewController.swift */; };
+		5BE296551C50B98500E15542 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE296531C50B98500E15542 /* Main.storyboard */; };
+		5BE296571C50B98500E15542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE296561C50B98500E15542 /* Assets.xcassets */; };
+		5BE2965A1C50B98500E15542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE296581C50B98500E15542 /* LaunchScreen.storyboard */; };
+		5BE296761C50BDCD00E15542 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE296681C50BDCD00E15542 /* Accelerate.framework */; };
+		5BE296771C50BDCD00E15542 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE296691C50BDCD00E15542 /* AudioToolbox.framework */; };
+		5BE296781C50BDCD00E15542 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE2966A1C50BDCD00E15542 /* AVFoundation.framework */; };
+		5BE296791C50BDCD00E15542 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE2966B1C50BDCD00E15542 /* CFNetwork.framework */; };
+		5BE2967A1C50BDCD00E15542 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE2966C1C50BDCD00E15542 /* CoreData.framework */; };
+		5BE2967B1C50BDCD00E15542 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE2966D1C50BDCD00E15542 /* CoreGraphics.framework */; };
+		5BE2967C1C50BDCD00E15542 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE2966E1C50BDCD00E15542 /* CoreLocation.framework */; };
+		5BE2967D1C50BDCD00E15542 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE2966F1C50BDCD00E15542 /* CoreMedia.framework */; };
+		5BE2967E1C50BDCD00E15542 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE296701C50BDCD00E15542 /* CoreVideo.framework */; };
+		5BE2967F1C50BDCD00E15542 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE296711C50BDCD00E15542 /* libresolv.tbd */; };
+		5BE296801C50BDCD00E15542 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE296721C50BDCD00E15542 /* libz.tbd */; };
+		5BE296811C50BDCD00E15542 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE296731C50BDCD00E15542 /* MobileCoreServices.framework */; };
+		5BE296821C50BDCD00E15542 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE296741C50BDCD00E15542 /* Security.framework */; };
+		5BE296831C50BDCD00E15542 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE296751C50BDCD00E15542 /* SystemConfiguration.framework */; };
+		5BE296851C50BDD600E15542 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BE296841C50BDD600E15542 /* libxml2.tbd */; };
+		8C58984EA18D20F3735EFE9D /* Pods_QuickbloxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448FDD7C86751C6F7C21DA8E /* Pods_QuickbloxTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		448FDD7C86751C6F7C21DA8E /* Pods_QuickbloxTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickbloxTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C1E6CC773184ED3331A8C7D /* Pods-QuickbloxTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickbloxTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickbloxTest/Pods-QuickbloxTest.release.xcconfig"; sourceTree = "<group>"; };
+		5B64551A1C50D7CC00CD6057 /* Quickblox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quickblox.framework; sourceTree = "<group>"; };
+		5BC99DF51C58A5D600965211 /* QBUPersonalUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QBUPersonalUser.swift; sourceTree = "<group>"; };
+		5BE2964C1C50B98500E15542 /* QuickbloxTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickbloxTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BE2964F1C50B98500E15542 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5BE296511C50B98500E15542 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5BE296541C50B98500E15542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5BE296561C50B98500E15542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BE296591C50B98500E15542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5BE2965B1C50B98500E15542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BE296651C50BCD600E15542 /* QuickbloxTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuickbloxTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		5BE296681C50BDCD00E15542 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		5BE296691C50BDCD00E15542 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5BE2966A1C50BDCD00E15542 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5BE2966B1C50BDCD00E15542 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		5BE2966C1C50BDCD00E15542 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5BE2966D1C50BDCD00E15542 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5BE2966E1C50BDCD00E15542 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5BE2966F1C50BDCD00E15542 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		5BE296701C50BDCD00E15542 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		5BE296711C50BDCD00E15542 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		5BE296721C50BDCD00E15542 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		5BE296731C50BDCD00E15542 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		5BE296741C50BDCD00E15542 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5BE296751C50BDCD00E15542 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5BE296841C50BDD600E15542 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		73F7598598ADD1E0D290ECC9 /* Pods-QuickbloxTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickbloxTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickbloxTest/Pods-QuickbloxTest.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BE296491C50B98500E15542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BE296851C50BDD600E15542 /* libxml2.tbd in Frameworks */,
+				5BE296761C50BDCD00E15542 /* Accelerate.framework in Frameworks */,
+				5BE296771C50BDCD00E15542 /* AudioToolbox.framework in Frameworks */,
+				5BE296781C50BDCD00E15542 /* AVFoundation.framework in Frameworks */,
+				5BE296791C50BDCD00E15542 /* CFNetwork.framework in Frameworks */,
+				5B64551B1C50D7CC00CD6057 /* Quickblox.framework in Frameworks */,
+				5BE2967A1C50BDCD00E15542 /* CoreData.framework in Frameworks */,
+				5BE2967B1C50BDCD00E15542 /* CoreGraphics.framework in Frameworks */,
+				5BE2967C1C50BDCD00E15542 /* CoreLocation.framework in Frameworks */,
+				5BE2967D1C50BDCD00E15542 /* CoreMedia.framework in Frameworks */,
+				5BE2967E1C50BDCD00E15542 /* CoreVideo.framework in Frameworks */,
+				5BE2967F1C50BDCD00E15542 /* libresolv.tbd in Frameworks */,
+				5BE296801C50BDCD00E15542 /* libz.tbd in Frameworks */,
+				5BE296811C50BDCD00E15542 /* MobileCoreServices.framework in Frameworks */,
+				5BE296821C50BDCD00E15542 /* Security.framework in Frameworks */,
+				5BE296831C50BDCD00E15542 /* SystemConfiguration.framework in Frameworks */,
+				8C58984EA18D20F3735EFE9D /* Pods_QuickbloxTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5BE296431C50B98500E15542 = {
+			isa = PBXGroup;
+			children = (
+				5BE2964E1C50B98500E15542 /* QuickbloxTest */,
+				5BE2964D1C50B98500E15542 /* Products */,
+				E72CD8D22CB0F5F3747C23D5 /* Pods */,
+				D2FE945F0FBFE62FC998EB60 /* Frameworks */,
+				5BE296651C50BCD600E15542 /* QuickbloxTest-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		5BE2964D1C50B98500E15542 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BE2964C1C50B98500E15542 /* QuickbloxTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BE2964E1C50B98500E15542 /* QuickbloxTest */ = {
+			isa = PBXGroup;
+			children = (
+				5BE2964F1C50B98500E15542 /* AppDelegate.swift */,
+				5BE296511C50B98500E15542 /* ViewController.swift */,
+				5BC99DF51C58A5D600965211 /* QBUPersonalUser.swift */,
+				5BE296531C50B98500E15542 /* Main.storyboard */,
+				5BE296561C50B98500E15542 /* Assets.xcassets */,
+				5BE296581C50B98500E15542 /* LaunchScreen.storyboard */,
+				5BE2965B1C50B98500E15542 /* Info.plist */,
+			);
+			path = QuickbloxTest;
+			sourceTree = "<group>";
+		};
+		D2FE945F0FBFE62FC998EB60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B64551A1C50D7CC00CD6057 /* Quickblox.framework */,
+				5BE296841C50BDD600E15542 /* libxml2.tbd */,
+				5BE296681C50BDCD00E15542 /* Accelerate.framework */,
+				5BE296691C50BDCD00E15542 /* AudioToolbox.framework */,
+				5BE2966A1C50BDCD00E15542 /* AVFoundation.framework */,
+				5BE2966B1C50BDCD00E15542 /* CFNetwork.framework */,
+				5BE2966C1C50BDCD00E15542 /* CoreData.framework */,
+				5BE2966D1C50BDCD00E15542 /* CoreGraphics.framework */,
+				5BE2966E1C50BDCD00E15542 /* CoreLocation.framework */,
+				5BE2966F1C50BDCD00E15542 /* CoreMedia.framework */,
+				5BE296701C50BDCD00E15542 /* CoreVideo.framework */,
+				5BE296711C50BDCD00E15542 /* libresolv.tbd */,
+				5BE296721C50BDCD00E15542 /* libz.tbd */,
+				5BE296731C50BDCD00E15542 /* MobileCoreServices.framework */,
+				5BE296741C50BDCD00E15542 /* Security.framework */,
+				5BE296751C50BDCD00E15542 /* SystemConfiguration.framework */,
+				448FDD7C86751C6F7C21DA8E /* Pods_QuickbloxTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E72CD8D22CB0F5F3747C23D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73F7598598ADD1E0D290ECC9 /* Pods-QuickbloxTest.debug.xcconfig */,
+				4C1E6CC773184ED3331A8C7D /* Pods-QuickbloxTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BE2964B1C50B98500E15542 /* QuickbloxTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BE2965E1C50B98500E15542 /* Build configuration list for PBXNativeTarget "QuickbloxTest" */;
+			buildPhases = (
+				1F98C1A2BB4F152CDD2FA453 /* Check Pods Manifest.lock */,
+				5BE296481C50B98500E15542 /* Sources */,
+				5BE296491C50B98500E15542 /* Frameworks */,
+				5BE2964A1C50B98500E15542 /* Resources */,
+				067749135AC1C6E8E342512B /* Embed Pods Frameworks */,
+				926C00E5B1181BED8DBDE8DF /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickbloxTest;
+			productName = QuickbloxTest;
+			productReference = 5BE2964C1C50B98500E15542 /* QuickbloxTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BE296441C50B98500E15542 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Spinit;
+				TargetAttributes = {
+					5BE2964B1C50B98500E15542 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 5BE296471C50B98500E15542 /* Build configuration list for PBXProject "QuickbloxTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5BE296431C50B98500E15542;
+			productRefGroup = 5BE2964D1C50B98500E15542 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BE2964B1C50B98500E15542 /* QuickbloxTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BE2964A1C50B98500E15542 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BE2965A1C50B98500E15542 /* LaunchScreen.storyboard in Resources */,
+				5BE296571C50B98500E15542 /* Assets.xcassets in Resources */,
+				5BE296551C50B98500E15542 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		067749135AC1C6E8E342512B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickbloxTest/Pods-QuickbloxTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F98C1A2BB4F152CDD2FA453 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		926C00E5B1181BED8DBDE8DF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickbloxTest/Pods-QuickbloxTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BE296481C50B98500E15542 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BE296521C50B98500E15542 /* ViewController.swift in Sources */,
+				5BC99DF61C58A5D600965211 /* QBUPersonalUser.swift in Sources */,
+				5BE296501C50B98500E15542 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5BE296531C50B98500E15542 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BE296541C50B98500E15542 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5BE296581C50B98500E15542 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BE296591C50B98500E15542 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5BE2965C1C50B98500E15542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5BE2965D1C50B98500E15542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5BE2965F1C50B98500E15542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73F7598598ADD1E0D290ECC9 /* Pods-QuickbloxTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = QuickbloxTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = se.spinit.ios.QuickbloxTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "QuickbloxTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5BE296601C50B98500E15542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C1E6CC773184ED3331A8C7D /* Pods-QuickbloxTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = QuickbloxTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = se.spinit.ios.QuickbloxTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "QuickbloxTest-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BE296471C50B98500E15542 /* Build configuration list for PBXProject "QuickbloxTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BE2965C1C50B98500E15542 /* Debug */,
+				5BE2965D1C50B98500E15542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BE2965E1C50B98500E15542 /* Build configuration list for PBXNativeTarget "QuickbloxTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BE2965F1C50B98500E15542 /* Debug */,
+				5BE296601C50B98500E15542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BE296441C50B98500E15542 /* Project object */;
+}
