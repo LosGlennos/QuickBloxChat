@@ -3,10 +3,26 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "ViewController.textFieldShouldReturn(UITextField) -&gt; Bool:ViewController.swift">
+         contextName = "ViewController.(signInToChat(ViewController) -&gt; () -&gt; ()).(closure #2):ViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "textField.resignFirstResponder()">
+               value = "response.success">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.signInToChat() -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.(didPressSendButton(ViewController) -&gt; (UIButton!, withMessageText : String!, senderId : String!, senderDisplayName : String!, date : NSDate!) -&gt; ()).(closure #1):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "groupChatDialog!">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -15,6 +31,57 @@
          <PersistentStrings>
             <PersistentString
                value = "dialogs?[1].name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoginViewController.loginPressed(UIButton) -&gt; ():LoginViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "passwordText != &quot;&quot; &amp;&amp; usernameText != &quot;&quot;">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.didPressSendButton(UIButton!, withMessageText : String!, senderId : String!, senderDisplayName : String!, date : NSDate!) -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "groupChatDialog!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.textFieldShouldReturn(UITextField) -&gt; Bool:ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "textField.resignFirstResponder()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.(signInToChat(ViewController) -&gt; () -&gt; ()).(closure #1):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "signedInUser!">
+            </PersistentString>
+            <PersistentString
+               value = "response.data!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.(signInToChat(ViewController) -&gt; () -&gt; ()).(closure #1).(closure #1):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoginViewController.userPressedLogin(UIButton) -&gt; ():LoginViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "usernameTextField">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

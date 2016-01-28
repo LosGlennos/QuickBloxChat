@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         QBSettings.setAuthSecret(authorizationSecret)
         QBSettings.setAccountKey(accountKey)
         
-        let msgVC : ViewController = ViewController()
+        /*let msgVC : ViewController = ViewController()
         msgVC.title = "Message Center"
         
         let navigationVC : UINavigationController = UINavigationController(rootViewController: msgVC)
@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: frame)
         
         window!.rootViewController = navigationVC
-        window!.makeKeyAndVisible()
+        window!.makeKeyAndVisible()*/
         
         // Override point for customization after application launch.
         return true
