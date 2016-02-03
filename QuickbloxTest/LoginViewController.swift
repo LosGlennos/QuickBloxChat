@@ -11,26 +11,28 @@ import Foundation
 class LoginViewController : UIViewController {
     
     // MARK: Properties
-    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var userIdTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        passwordTextField.secureTextEntry = true
     }
     
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {
-        let username = usernameTextField.text
+        let email = emailTextField.text
         let password = passwordTextField.text
-        return username != "" && password != "" && userIdTextField.text != ""
+        return email != "" && password != "" && userIdTextField.text != ""
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let username = usernameTextField.text
+        let email = emailTextField.text
         let password = passwordTextField.text
         let userId = userIdTextField.text
         let next = segue.destinationViewController as! ViewController
-        next.username = username
+        next.email = email
         next.password = password
         next.userId = userId
         self.presentViewController(next, animated: true, completion: nil)

@@ -3,22 +3,6 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "ViewController.(signInToChat(ViewController) -&gt; () -&gt; ()).(closure #2):ViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "response.success">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "ViewController.signInToChat() -&gt; ():ViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "response">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "ViewController.(didPressSendButton(ViewController) -&gt; (UIButton!, withMessageText : String!, senderId : String!, senderDisplayName : String!, date : NSDate!) -&gt; ()).(closure #1):ViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -43,29 +27,18 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "ViewController.didPressSendButton(UIButton!, withMessageText : String!, senderId : String!, senderDisplayName : String!, date : NSDate!) -&gt; ():ViewController.swift">
+         contextName = "ViewController.signInToChat() -&gt; ():ViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "groupChatDialog!">
+               value = "response">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "ViewController.textFieldShouldReturn(UITextField) -&gt; Bool:ViewController.swift">
+         contextName = "LoginViewController.userPressedLogin(UIButton) -&gt; ():LoginViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "textField.resignFirstResponder()">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "ViewController.(signInToChat(ViewController) -&gt; () -&gt; ()).(closure #1):ViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "signedInUser!">
-            </PersistentString>
-            <PersistentString
-               value = "response.data!">
+               value = "usernameTextField">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -78,10 +51,87 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "LoginViewController.userPressedLogin(UIButton) -&gt; ():LoginViewController.swift">
+         contextName = "ViewController.textFieldShouldReturn(UITextField) -&gt; Bool:ViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "usernameTextField">
+               value = "textField.resignFirstResponder()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.(signInToChat(ViewController) -&gt; () -&gt; ()).(closure #2):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.success">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.(signInToChat(ViewController) -&gt; () -&gt; ()).(closure #1):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "signedInUser!">
+            </PersistentString>
+            <PersistentString
+               value = "response.data!">
+            </PersistentString>
+            <PersistentString
+               value = "test!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.didPressSendButton(UIButton!, withMessageText : String!, senderId : String!, senderDisplayName : String!, date : NSDate!) -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "groupChatDialog!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.(joinChat(ViewController) -&gt; () -&gt; ()).(closure #1).(closure #1):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.userId">
+            </PersistentString>
+            <PersistentString
+               value = "String(senderUserID) != self.userId">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.collectionView(JSQMessagesCollectionView!, messageBubbleImageDataForItemAtIndexPath : NSIndexPath!) -&gt; JSQMessageBubbleImageDataSource!:ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.messages[indexPath.item].senderId">
+            </PersistentString>
+            <PersistentString
+               value = "self.messages[indexPath.item].text">
+            </PersistentString>
+            <PersistentString
+               value = "self.messages[indexPath.item].senderId == self.userId">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.item">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.chatRoomDidReceiveMessage(QBChatMessage, fromDialogID : String) -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "message.customParameters!.valueForKeyPath(&quot;user_nick&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.collectionView(UICollectionView, cellForItemAtIndexPath : NSIndexPath) -&gt; UICollectionViewCell:ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "message.senderId == self.userId">
+            </PersistentString>
+            <PersistentString
+               value = "message.senderId">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
