@@ -18,7 +18,8 @@ class LoginViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        passwordTextField.secureTextEntry = true
+        self.passwordTextField.secureTextEntry = true
+        self.emailTextField.keyboardType = .EmailAddress
     }
     
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool {

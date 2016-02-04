@@ -84,7 +84,7 @@
          contextName = "ViewController.didPressSendButton(UIButton!, withMessageText : String!, senderId : String!, senderDisplayName : String!, date : NSDate!) -&gt; ():ViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "groupChatDialog!">
+               value = "self.userName">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

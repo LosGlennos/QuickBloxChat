@@ -20,12 +20,14 @@ class ViewController: JSQMessagesViewController, QBChatDelegate, UINavigationBar
     var userId: String!
     var user : QBUUser!
     var alert : UIActivityIndicatorView!
+    var userName : String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let navigationBar = UINavigationBar(frame: CGRect(x: 0, y: 20, width: self.view.frame.size.width, height: 44))
-        navigationBar.backgroundColor = UIColor.whiteColor()
+        self.view.frame.offsetInPlace(dx: 0, dy: 20)
+        
+        let navigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 44))
         navigationBar.delegate = self
         
         let navigationItem = UINavigationItem()
@@ -38,22 +40,26 @@ class ViewController: JSQMessagesViewController, QBChatDelegate, UINavigationBar
         
         self.view.addSubview(navigationBar)
         
+        UIApplication.sharedApplication().beginIgnoringInteractionEvents()
+        
         alert = UIActivityIndicatorView(activityIndicatorStyle: .Gray)
         alert.frame = CGRectMake(0, 0, 24, 24)
+        alert.center = self.view.center
         view.addSubview(alert)
         alert.startAnimating()
         
         QBChat.instance().addDelegate(self)
         self.senderId = self.userId
-        self.senderDisplayName = self.email
         self.collectionView?.collectionViewLayout.outgoingAvatarViewSize = CGSizeZero
         self.inputToolbar?.contentView?.leftBarButtonItem = nil
+        self.senderDisplayName = self.email
+        self.collectionView?.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 108, right: 0)
         // Do any additional setup after loading the view, typically from a nib.
         signInToChat()
     }
     
     override func didPressSendButton(button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: NSDate!) {
-        let message = JSQMessage(senderId: self.senderId, senderDisplayName: self.senderDisplayName, date: NSDate.distantPast(), text: text)
+        let message = JSQMessage(senderId: self.senderId, senderDisplayName: self.senderDisplayName, date: date, text: text)
         messages += [message!]
         
         let qbMessage: QBChatMessage = QBChatMessage()
@@ -61,6 +67,7 @@ class ViewController: JSQMessagesViewController, QBChatDelegate, UINavigationBar
         qbMessage.text = text
         let params = NSMutableDictionary()
         params["save_to_history"] = true
+        params["user_nick"] = self.userName
         qbMessage.customParameters = params
         
         groupChatDialog!.sendMessage(qbMessage, completionBlock: { (error: NSError?) -> Void in
@@ -77,8 +84,9 @@ class ViewController: JSQMessagesViewController, QBChatDelegate, UINavigationBar
         let senderId = String(message.senderID)
         let senderName = message.customParameters!.valueForKeyPath("user_nick") as! String
         
+        
         if (senderId != self.userId) {
-            let jsqMessage = JSQMessage(senderId: senderId, displayName: senderName, text: text)
+            let jsqMessage = JSQMessage(senderId: senderId, senderDisplayName: senderName, date: message.dateSent, text: text)
             messages += [jsqMessage!]
             self.finishReceivingMessageAnimated(true)
         }
@@ -122,11 +130,41 @@ class ViewController: JSQMessagesViewController, QBChatDelegate, UINavigationBar
         return cell;  
     }
     
+    override func collectionView(collectionView: JSQMessagesCollectionView!, attributedTextForCellBottomLabelAtIndexPath indexPath: NSIndexPath!) -> NSAttributedString! {
+        let messageDate = messages[indexPath.item].date
+        return JSQMessagesTimestampFormatter.sharedFormatter().attributedTimestampForDate(messageDate)
+    }
+    
+    override func collectionView(collectionView: JSQMessagesCollectionView!, layout collectionViewLayout: JSQMessagesCollectionViewFlowLayout!, heightForCellBottomLabelAtIndexPath indexPath: NSIndexPath!) -> CGFloat {
+        return kJSQMessagesCollectionViewCellLabelHeightDefault
+    }
+    
     override func collectionView(collectionView: JSQMessagesCollectionView!, avatarImageDataForItemAtIndexPath indexPath: NSIndexPath!) -> JSQMessageAvatarImageDataSource! {
         if (messages[indexPath.item].senderId != self.userId) {
-            return JSQMessagesAvatarImageFactory.avatarImageWithUserInitials("XX", backgroundColor: UIColor.jsq_messageBubbleLightGrayColor(), textColor: UIColor.whiteColor(), font: UIFont.boldSystemFontOfSize(14), diameter: 30)
+            let name = messages[indexPath.item].senderDisplayName as String
+            let nameArray = name.componentsSeparatedByString(" ")
+            let firstName = nameArray[0]
+            let surName = nameArray[1]
+            let initials = String(firstName[firstName.startIndex.advancedBy(0)]) + String(surName[surName.startIndex.advancedBy(0)])
+            return JSQMessagesAvatarImageFactory.avatarImageWithUserInitials(initials, backgroundColor: UIColor.jsq_messageBubbleLightGrayColor(), textColor: UIColor.whiteColor(), font: UIFont.boldSystemFontOfSize(14), diameter: 30)
         }
         return nil
+    }
+    
+    override func collectionView(collectionView: JSQMessagesCollectionView!, attributedTextForMessageBubbleTopLabelAtIndexPath indexPath: NSIndexPath!) -> NSAttributedString! {
+        if (messages[indexPath.item].senderId! != self.userId) {
+            return NSAttributedString(string: messages[indexPath.item].senderDisplayName)
+        }
+        
+        return nil
+    }
+    
+    override func collectionView(collectionView: JSQMessagesCollectionView!, layout collectionViewLayout: JSQMessagesCollectionViewFlowLayout!, heightForMessageBubbleTopLabelAtIndexPath indexPath: NSIndexPath!) -> CGFloat {
+        if (messages[indexPath.item].senderId! != self.userId) {
+            return kJSQMessagesCollectionViewCellLabelHeightDefault
+        }
+        
+        return 0
     }
     
     func signInToChat() {
@@ -135,8 +173,8 @@ class ViewController: JSQMessagesViewController, QBChatDelegate, UINavigationBar
         user.ID = UInt(self.userId)!
         
         QBRequest.logInWithUserEmail(self.email!, password: self.password!, successBlock: { (response: QBResponse, signedInUser: QBUUser?) -> Void in
-            let test = signedInUser;
-            QBChat.instance().connectWithUser(test!, completion: { (NSError) -> Void in
+            self.userName = signedInUser?.fullName
+            QBChat.instance().connectWithUser(user, completion: { (NSError) -> Void in
                 
                 let extendedRequest = ["sort_desc": "_id"]
                 
@@ -172,6 +210,8 @@ class ViewController: JSQMessagesViewController, QBChatDelegate, UINavigationBar
             if ((error) != nil) {
                 print(error)
             } else {
+                self.alert.stopAnimating()
+                UIApplication.sharedApplication().endIgnoringInteractionEvents()
                 /*QBRequest.messagesWithDialogID(self.groupChatDialog!.ID!, extendedRequest: nil, forPage: QBResponsePage(limit:20, skip: 0), successBlock: {(response: QBResponse, qbMessages: [QBChatMessage]?, responsePage: QBResponsePage?) in
                     for i in 0...qbMessages!.count - 1 {
                         let senderUserID = qbMessages![i].senderID
